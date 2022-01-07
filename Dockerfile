@@ -24,10 +24,10 @@ RUN apk --update add --virtual \
 
 RUN mkdir -p /etc/ansible
 
-COPY build_latest /usr/local/bin/
+COPY ls.sh /usr/local/bin/
 
 WORKDIR /ansible
 
-ENTRYPOINT ["build_latest"]
+ENTRYPOINT ["ls.sh"]
 
 CMD [ "ansible-playbook", "--version" ]
