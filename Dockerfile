@@ -30,4 +30,4 @@ WORKDIR /ansible
 
 ENTRYPOINT ["ls.sh"]
 
-CMD [ "ansible-playbook", "--version" ]
+CMD [ "ansible-playbook", "${ANSIBLE_VERSION}" ]
