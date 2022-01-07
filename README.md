@@ -1,5 +1,7 @@
 ### Build images
+```
 ./build_latest
+```
 
 ### Run Playbook
 
